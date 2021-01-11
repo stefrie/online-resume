@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-areas: "header header"
+                         "left right"
+                         "footer footer";
+    grid-template-columns: 300px 500px;
+    grid-template-rows: 340px 300px 150px;
+  }
+  
+  img {
+    border-radius: 20px;
+    border-width: 5px;
+  }
+  
+  h1, h3 {
+    font-family: Georgia, serif;
+    text-align: center;
+  }
+  
+  header {
+    background-color: rgb(118, 184, 118);
+    grid-area: header;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .left {
+    background-color: whitesmoke;
+    grid-area: left;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .right {
+    background-color: whitesmoke;
+    grid-area: right;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  footer {
+    background-color: rgb(118,184,118);
+    grid-area: footer;
+    border-radius: 20px;
+    text-align: center;
+  }
